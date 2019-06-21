@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Quick Window</title>
+    <script src="popup.js"></script>
+    <style>
+      html {
+        background-color: #333333;
+        border-left: 2px solid #FFFFFF;
+        border-right: 2px solid #FFFFFF;
+        color: #F2F2F2;
+      }
+      iframe {
+        min-width: 750px;
+        min-height: 500px;
+      }
+      #top_query {
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+      #frame_url {
+        margin-bottom: 10px;
+        width: 89%;
+        text-align: center;
+        float: left;
+      }
+      #load_url {
+        float: left;
+        width: 19%;
+      }
+      img#load_url,
+      img#incognito {
+        float: left;
+        max-height: 20px;
+        width: auto;
+        margin-left: 1%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top_query">
+      <input id="frame_url" type="url">
+      <img id="load_url" src="search.png">
+      <img id="incognito" src="incognito.png">
+    </div>
+    <div>
+      <iframe id="frame_id" src="about:blank" frameborder="0"></iframe>
+    </div>
+  </body>
+</html>
